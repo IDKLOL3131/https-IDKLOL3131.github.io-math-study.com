@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Equation Randomizer</h1>
+        <div class="equation-display">
+            <div class="equation-box">
+                <p id="equation1">5 + 3 = ?</p>
+            </div>
+            <div class="equation-divider"></div>
+            <div class="equation-box">
+                <p id="equation2">2x - y = 7</p>
+            </div>
+        </div>
+        <div class="input-section">
+            <input type="number" id="answerX" placeholder="x =" autocomplete="off">
+            <input type="number" id="answerY" placeholder="y =" autocomplete="off">
+        </div>
+        <button id="check-btn" onclick="checkAnswer()">Check</button>
+        <div class="results">
+            <div id="explanation"></div>
+            <div id="answer-box" class="answer-box"></div>
+            <p id="result"></p>
+            <p id="score">Score: 0/0 (0%)</p>
+        </div>
+        <button onclick="generateEquation()" class="next-btn">Next Equation</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
